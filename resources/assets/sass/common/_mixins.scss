@@ -1,0 +1,110 @@
+@mixin desktop() {
+  @media only screen and (max-width: 1200px) {
+    @content
+  }
+}
+
+@mixin laptop() {
+  @media only screen and (max-width: 992px) {
+    @content
+  }
+}
+
+
+@mixin ipads() {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    @content
+  }
+}
+
+@mixin tablets() {
+  @media only screen and (max-width: 850px) {
+    @content
+  }
+}
+
+
+@mixin phones() {
+  @media only screen and (max-width: 480px) {
+    @content
+  }
+}
+
+@mixin phones-xs() {
+  @media only screen and (max-width: 320px) {
+    @content
+  }
+}
+
+@mixin notebook() {
+  @media only screen and (min-width: 851px) and (max-width: 1600px) and (max-height: 820px) {
+    @content
+  }
+}
+
+@mixin notebook-min() {
+  @media only screen and (min-width: 851px) and (max-width: 1600px) and (max-height: 768px) {
+    @content
+  }
+}
+
+@mixin notebook-middle-height() {
+  @media only screen and (min-width: 851px) and (max-width: 1600px) and (max-height: 820px) and (min-height: 700px) {
+    @content
+  }
+}
+
+
+
+
+@mixin centered-flex() {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@mixin centered-abs() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+@mixin centered-trans() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centered-x() {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin centered-y() {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+//extends
+
+%clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+%text-30 {
+  font-size:30px;
+  text-transform: uppercase;
+}

@@ -7,3 +7,15 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Common
+@import "common/fonts";
+@import "common/mixins";
+@import "common/foundation";
+
+//Page
+@import "page/header";
+@import "page/menu";
+@import "page/sidebar";
+@import "page/content";
+@import "page/footer";

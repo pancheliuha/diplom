@@ -1,0 +1,34 @@
+.header-wrapper {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.header__video {
+  @include centered-trans();
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header__text {
+  margin: 0;
+  padding: 20px;
+  @include centered-trans();
+  font-size: 50px;
+  color: #fff;
+  z-index: 8;
+  font-weight: bold;
+}
+.header__overlay {
+  @include centered-abs();
+  background: rgba(0, 0, 0, .3);
+  z-index: 2;
+}

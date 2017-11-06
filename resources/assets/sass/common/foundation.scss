@@ -1,0 +1,34 @@
+html, body {
+  background-color: #fff;
+  color: #303a4a;
+  font-family: 'roboto_regular-Bold', sans-serif;
+  min-height: 100%;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  position: relative;
+
+}
+
+.main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-wrapper {
+  height: 100px;
+}
+
+.main-block-wrapper {
+  flex-grow: 1;
+  display: flex;
+}
+
+.menu-wrapper {
+}
+
+.footer-wrapper {
+  height: 100px;
+}

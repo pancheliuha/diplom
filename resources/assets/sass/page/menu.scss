@@ -1,0 +1,26 @@
+.menu-wrapper {
+  background-color: #0d3625;
+  height: 50px;
+}
+
+.menu {
+
+}
+
+.menu__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
+.menu__item {
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+  margin-right: 15px;
+  &:last-child {
+    border: none;
+  }
+}
