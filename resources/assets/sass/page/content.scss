@@ -1,3 +1,9 @@
+.main-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
 .content-wrapper {
   flex-grow: 1;
   background-color: #ccc;
@@ -5,3 +11,4 @@
 .content {
   height: 100%;
 }
+
